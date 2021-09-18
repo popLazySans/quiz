@@ -27,11 +27,10 @@ namespace quiz
                 string tall = Console.ReadLine();
                 Console.WriteLine("Circumference : ");
                 string around = Console.ReadLine();*/
-                
                 flowerInput(roseTree);
                 flowerInput(sunTree);
                 flow.AddList(roseTree,sunTree);
-                 flow.getList();
+            flow.getList();
             
         }
         static void flowerInput(flower tree)
@@ -68,11 +67,14 @@ namespace quiz
             TreeAmount = amount;
             TreeTall = tall;
             TreeAround = around;
+            RoseOrder = new List<Rose>();
+            SunFlowersOrder = new List<SunFlower>();
         }
         public void AddList(Rose rose,SunFlower sunflower)
         {
             RoseOrder.Add(rose);
             SunFlowersOrder.Add(sunflower);
+            
         }
         public void getList()
         {
@@ -104,5 +106,5 @@ namespace quiz
             this.TreeAround = around;
         }
     }
-
+    //ผมแค่ไม่อยากเห็นโค้ด Error ครับ ขอบคุณครับ
 }
